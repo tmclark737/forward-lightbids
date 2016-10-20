@@ -1,6 +1,23 @@
 Rails.application.routes.draw do
   root 'welcome#index', to: 'welcome#index'
   resources 'welcome'
+
+
+
+  get 'projects', to: 'welcome#projects'
+  get 'support', to: 'welcome#support'
+  get 'users/sign_up', to: 'welcome#sign_up'
+  get 'welcome/plans', to: 'welcome#plans'
+  get 'welcome/eula', to: 'welcome#eula'
+  get 'users/password/new', to: 'welcome#new_password'
+
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
